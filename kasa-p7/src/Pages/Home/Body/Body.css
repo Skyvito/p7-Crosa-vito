@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+.Body {
+    padding: 0 30px;
+}
+
+.header-body {
+    width: 100%;
+    height: 230px;
+    position: relative;
+}
+
+.fond-montagnes {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.ombre {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    mix-blend-mode: darken;
+    border-radius: 25px;
+    opacity: 0.3;
+}
+
+ .titre-headerSection {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: #f1f1f1;
+   font-family: "Montserrat", sans-serif;
+   font-size: 1.2em;
+
+
+
+   
+}
