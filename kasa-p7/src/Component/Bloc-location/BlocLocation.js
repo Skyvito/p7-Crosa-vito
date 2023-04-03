@@ -1,12 +1,13 @@
 import React from "react";
 import "./BlocLocation.css";
+import { Link } from "react-router-dom";
 
 export default function BlocLocation(props) {
     return (
-        <div className="blocLocation">
-            <div className="rectangle">
-                <p>{props.text}</p>
-            </div>
-        </div>
+        <Link to={`/logement/:${props.id}`} className="blockLocation">
+            <img src={props.cover} alt="cover logement" />
+            <div className="ombres"></div>
+            <h3>{props.title}</h3>
+        </Link>
     );
 }

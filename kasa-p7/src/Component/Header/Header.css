@@ -24,19 +24,37 @@
 .navbar ul li {
     margin: 0 0 0 50px;
     list-style: none;
-    color: #ff6060;
     text-decoration: none;
-    text-decoration-color: #f0f0f0;
-}
-
-.navbar ul li:hover {
-    text-decoration: underline;
-    text-decoration-color: #ff6060;
-    transition: text-decoration-color 0.5s ease-in-out;
 }
 
 .logo:hover {
     transform: scale(0.8);
     transition: all 0.5s ease-in-out;
     position: relative;
+}
+
+.navbar ul li a {
+    text-decoration-color: #ffffff;
+    color: #ff6060;
+    transition: text-decoration-color 0.2s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #ff6060;
+    transition: text-decoration-color 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 624px) {
+    .header {
+        padding: 10px;
+    }
+
+    .navbar ul {
+        font-size: 14px;
+    }
+
+    .navbar ul li {
+        margin: 0 0 0 30px;
+    }
 }

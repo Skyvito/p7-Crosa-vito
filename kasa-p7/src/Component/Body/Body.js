@@ -12,7 +12,9 @@ export default function Body() {
                     alt="fond-montagnes"
                 />
                 <div className="ombre"> </div>
-                <h2 className="titre-headerSection">Chez vous, partout et ailleurs</h2>
+                <h2 className="titre-headerSection">
+                    Chez vous, partout et ailleurs
+                </h2>
             </section>
         </div>
     );

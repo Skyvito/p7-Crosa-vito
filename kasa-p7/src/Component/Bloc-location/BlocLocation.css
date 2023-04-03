@@ -1,14 +1,38 @@
-.blocLocation {
-    position: absolute;
-    width: 340px;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+.blockLocation {
+    position: relative;
+    width: 30%;
     height: 340px;
-    left: 55px;
-    top: 180px;
-    background: #ff6060;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: transform 0.2s ease-in-out;
+}
+
+.blockLocation:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 18px 5px #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+.blockLocation img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
 }
 
-.rectangle {
+.blockLocation h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+}
+
+.ombres {
     position: absolute;
     left: 0%;
     right: 0%;
@@ -23,32 +47,34 @@
     border-radius: 10px;
 }
 
-.blocLocation p {
-    position: absolute;
-    left: 5.88%;
-    right: 5.88%;
-    top: 78.82%;
-    bottom: 5.88%;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 142.6%;
-    display: flex;
-    align-items: flex-end;
-    color: #ffffff;
+@media screen and (max-width: 1120px) {
+    .blockLocation {
+        height: 280px;
+        width: 40%;
+    }
 }
 
-@media screen and (max-width: 425px) {
-    .blocLocation {
-        position: absolute;
-        width: 335px;
-        height: 255px;
-        left: 21px;
-        top: 491px;
+
+@media screen and (max-width: 1023px) {
+    .blockLocation {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .blockLocation {
+        width: 100%;
+        height: 326px;
     }
 
-    .blocLocation p{
-        top: 73.73%;
+    .blockLocation:hover {
+        transform: scale(0.9);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .blockLocation {
+        height: 255px;
     }
 }
