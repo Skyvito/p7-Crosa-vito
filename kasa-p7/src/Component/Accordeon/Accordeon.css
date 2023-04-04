@@ -20,8 +20,9 @@
 }
 
 .accord-visible h2 {
-    font-size: 20px;
+    font-size: 24px;
     font-family: "Montserrat", sans-serif;
+    font-weight: 500
 }
 
 .chevronDown,
@@ -46,7 +47,22 @@
     padding: 22px 15px;
     pointer-events: none;
     font-family: "Montserrat", sans-serif;
+    font-size: 18px;
 }
 .none {
     display: none;
+}
+@media screen and (max-width: 624px) {
+    .accord {
+    margin: 20px auto 0 ;
+    }
+
+    .accord-toogle p {
+font-size: 12px;
+font-weight: 500
+    }
+    .accord-visible h2{
+        font-size: 13px
+    }
+
 }

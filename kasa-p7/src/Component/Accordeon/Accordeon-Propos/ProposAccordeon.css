@@ -11,17 +11,13 @@
 }
 
 @media screen and (max-width: 1050px) {
-    .accords{
+    .accords {
         padding: 0 50px;
     }
-
 }
 
-
-
 @media screen and (max-width: 624px) {
-    .accords{
+    .accords {
         padding: 0 10px;
     }
-
 }

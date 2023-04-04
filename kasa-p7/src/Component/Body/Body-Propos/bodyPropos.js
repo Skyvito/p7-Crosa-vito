@@ -7,11 +7,11 @@ export default function bodyPropos() {
         <div className="Body">
             <section className="header-bodyMontagne">
                 <img
-                    className="fond-montagnesPorpos"
+                    className="fond-montagnesPropos"
                     src={Fond}
                     alt="fond-montagnes"
                 />
-                <div className="ombre-montagne"> </div>
+                <div className="ombre-montagnePropos"> </div>
             </section>
         </div>
     );
