@@ -1,11 +1,10 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
+
 import Home from "./Pages/Home/Home";
 import Propos from "./Pages/A_propos/Propos";
 import Appartement from "./Pages/Appartement/Appartement";
-import Erreur from "./Pages/Erreur/Erreur.js"
-
-
+import Erreur from "./Pages/Erreur/Erreur.js";
 
 function App() {
     return (

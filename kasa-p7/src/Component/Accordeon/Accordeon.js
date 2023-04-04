@@ -15,6 +15,13 @@ export default function Accordeon(props) {
 
     useEffect(() => {
         setHeightEl(`${refHeight.current.scrollHeight}px`);
+        const handleResize = () => {
+            setHeightEl(`${refHeight.current.scrollHeight}px`);
+        };
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
     }, []);
 
     return (

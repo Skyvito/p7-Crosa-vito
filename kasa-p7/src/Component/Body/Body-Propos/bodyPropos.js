@@ -5,13 +5,13 @@ import "../Body.css";
 export default function bodyPropos() {
     return (
         <div className="Body">
-            <section className="header-body">
+            <section className="header-bodyMontagne">
                 <img
-                    className="fond-montagnes"
+                    className="fond-montagnesPorpos"
                     src={Fond}
                     alt="fond-montagnes"
                 />
-                <div className="ombre"> </div>
+                <div className="ombre-montagne"> </div>
             </section>
         </div>
     );

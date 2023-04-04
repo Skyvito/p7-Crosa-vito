@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 .logo {
-    max-width: 200px;
-    width: 100px;
+    width: 210.32px;
+    height: 68px;
     transition: transform 0.5s ease-in-out;
 }
 
 .header {
     display: flex;
-    width: auto;
+    width: 100%;
     align-items: center;
     padding: 30px;
     position: relative;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .navbar ul {
@@ -33,16 +33,22 @@
     position: relative;
 }
 
-.navbar ul li a {
-    text-decoration-color: #ffffff;
+.activeLink {
+    text-decoration-color: #ff6060;
     color: #ff6060;
-    transition: text-decoration-color 0.2s ease-in-out;
 }
 
-.navbar ul li a:hover {
-    text-decoration: underline;
-    text-decoration-color: #ff6060;
-    transition: text-decoration-color 0.5s ease-in-out;
+.desactiveLink {
+    color: #ff6060;
+    text-decoration: none;
+}
+
+.header-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1240px;
 }
 
 @media screen and (max-width: 624px) {
@@ -56,5 +62,17 @@
 
     .navbar ul li {
         margin: 0 0 0 30px;
+    }
+
+    .logo {
+        width: 145px;
+        height: 47px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .logo {
+        width: 120px;
+        height: auto;
     }
 }

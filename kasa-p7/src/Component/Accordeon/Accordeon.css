@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 .accord {
-    max-width: 69%;
+    
+    width: 100%;
     height: auto;
     border: 1px solid rgba(0, 0, 0, 0.2);
     margin: 40px auto 0;

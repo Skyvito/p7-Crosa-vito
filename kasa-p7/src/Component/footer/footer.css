@@ -13,37 +13,44 @@
 .footer {
     padding: 0 30px;
     width: 100%;
-    height: auto;
-    background-color: black;
+    height: 200px;
     position: relative;
     height: 200px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-color: black;
+}
 
-   
+.dimension {
+    height: 100%;
+    width: 100%;
+    max-width: 1240px;
+    display: flex;
+    justify-content: center;
+}
+
+.placement {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer-p {
     color: #ffffff;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-size: 1.2em;
- 
-   
 }
 
 @media screen and (max-width: 624px) {
-    .footer-p{
+    .footer-p {
         font-size: 1em;
     }
-    
 }
 
-@media screen and (max-width: 320px){
-    .footer-p{
+@media screen and (max-width: 320px) {
+    .footer-p {
         font-size: 0.75em;
     }
 }
-
-
