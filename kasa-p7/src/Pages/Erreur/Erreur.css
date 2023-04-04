@@ -61,4 +61,8 @@
     .LinkReturn {
         font-size: 0.875em;
     }
+
+    .divblockError {
+        padding: 160px 20px;
+    }
 }
