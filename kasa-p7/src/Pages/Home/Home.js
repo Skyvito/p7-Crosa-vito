@@ -1,5 +1,4 @@
 import React from "react";
-import "./Home.css";
 import Header from "../../Component/Header/Header";
 import Body from "../../Component/Body/Body";
 import Gallery from "../../Component/Galerry/Gallery";

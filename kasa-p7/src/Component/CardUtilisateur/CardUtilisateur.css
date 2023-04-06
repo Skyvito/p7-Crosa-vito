@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+.divMother {
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.information {
+    padding-top: 30px;
+    max-width: 1240px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleLogement,
+.locationLogement,
+.personnelInformation p {
+    font-family: "Montserrat", sans-serif;
+    color: #ff6060;
+    font-weight: 500;
+}
+
+.titleLogement {
+    font-size: 2.25em;
+}
+
+.locationLogement {
+    font-size: 1.125em;
+    margin-bottom: 10px;
+    margin-top: -8px;
+}
+
+.tagList {
+    display: flex;
+
+    margin-top: 10px;
+    max-width: 1240px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.titleInformation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personnelInformation {
+    display: flex;
+    align-items: center;
+}
+
+.personnelInformation img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.personnelInformation p {
+    font-size: 1.125em;
+    width: 92px;
+    height: 52px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.tag {
+    display: flex;
+}
+
+.star {
+    margin: 0 5px;
+}
