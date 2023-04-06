@@ -44,8 +44,9 @@ export default function Accordeon(props) {
                 ref={refHeight}
                 className={toogle ? "accord-toogle animated" : "accord-toogle "}
                 style={{ height: toogle ? `${heightEl}` : "0px" }}
+                
             >
-                <p aria-hidden={toogle ? "true" : "false"}>{props.text}</p>
+                <p  aria-hidden={toogle ? "true" : "false"}>{props.text}</p>
             </div>
         </div>
     );

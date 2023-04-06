@@ -31,7 +31,6 @@
 .locationLogement {
     font-size: 1.125em;
     margin-bottom: 10px;
-    margin-top: -8px;
 }
 
 .tagList {
@@ -76,4 +75,89 @@
 
 .star {
     margin: 0 5px;
+}
+
+.rating {
+    padding-top: 10px;
+}
+
+.starAndProfile {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media screen and (max-width: 900px) and (min-width: 625px) {
+    .titleLogement {
+        font-size: 2em;
+    }
+    .star {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 850px)  and (min-width: 625px) {
+    .titleInformation{
+        display: inline-block;
+    }
+    .titleLogement, .locationLogement{
+        text-align: center;
+    }
+    .tag{
+        justify-content: center;
+    }
+    .starAndProfile{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    .rating {
+        padding-top: 25px;
+    }
+}
+
+
+@media screen and (max-width: 754px) and (min-width: 625px) {
+    .titleLogement {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .titleInformation {
+        display: inline-block;
+    }
+    .starAndProfile {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    .titleLogement {
+        font-size: 1.125em;
+    }
+    .locationLogement {
+        font-size: 0.875em;
+    }
+    .star {
+        width: 13px;
+        height: 13px;
+    }
+    .personnelInformation p {
+        font-size: 0.79em;
+        height: 33px;
+        width: 75px;
+    }
+    .personnelInformation img {
+        width: 32px;
+        height: 32px;
+    }
+    .divMother {
+        padding: 0 10px;
+    }
+    .information {
+        padding-top: 15px;
+    }
+    .star {
+        margin: 0px 2px;
+    }
 }

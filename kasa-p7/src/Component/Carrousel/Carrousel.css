@@ -45,3 +45,18 @@
     height: 79.19999694824219px;
     width: 46.68000411987305px;
 }
+
+@media screen and (max-width: 624px) {
+    .slider {
+        height: 255px;
+        padding: 0 10px;
+    }
+    .rightcursor {
+        width: 11.67px;
+        height: 19.8px;
+    }
+    .leftcursor {
+        width: 11.67px;
+        height: 19.8px;
+    }
+}

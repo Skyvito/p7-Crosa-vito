@@ -1,0 +1,47 @@
+.accordeonLogement {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.AccordelonYoung {
+    max-width: 1240px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.AccordeonDescritpion {
+    max-width: 500px;
+    width: 100%;
+    
+}
+
+.AccordeonÉquipements {
+    max-width: 500px;
+    width: 100%;
+    list-style: none;
+}
+
+@media screen and (max-width: 624px) {
+    .AccordeonDescritpion {
+        width: 100%;
+        max-width: 100%;
+    }
+    .AccordeonÉquipements {
+        width: 100%;
+        max-width: 100%;
+    }
+    .AccordelonYoung {
+        flex-direction: column;
+    }
+    .accordeonLogement{
+     padding: 0 10px;   
+    }
+    .AccordelonYoung{
+        padding-bottom: 0;
+    }
+}
