@@ -1,59 +1,76 @@
 import React, { useState } from "react";
-import logements from "../../logements/logements";
-import { useParams } from "react-router-dom";
-import Erreur from "../Erreur/Erreur";
 import "./Carrousel.css";
 import Left from "./img/left.svg";
 import Right from "./img/right.svg";
 
-export default function SliderImg() {
-    const { id } = useParams();
-    const logement = logements.find((logement) => logement.id === id);
+export default function SliderImg(props) {
+    const logement = props.logement;
     console.log(logement);
 
-    
-  
     const [currentIndex, setCurrentIndex] = useState(0);
 
+    console.log(currentIndex);
 
-  console.log(currentIndex);
-  
-    if (!logement) {
-        return <div>{Erreur}</div>;
-      }
-  
     return (
-     <>
-
-<div className="slider">
-    <div className="sliders">
-        {logement.pictures.map((picture, index) => (
-          <img
-          className="imgAppartement"
-            key={index}
-            src={picture}
-            alt="appartement"
-            style={{ display: index === currentIndex ? "block" : "none" }}
-          />
-        ))}
-        <button
-          onClick={() =>
-            setCurrentIndex((currentIndex - 1 + logement.pictures.length) % logement.pictures.length)
-          }
-        >
-          <img className="leftcursor " src={Left} alt="cursor Left" />
-        </button>
-        <button onClick={() => 
-              setCurrentIndex((currentIndex + 1) % logement.pictures.length)
-              
-            }>
-            <img className="rightcursor"  src={Right} alt="cursor Right" />
-        </button>
-        </div>
-      </div>
-   
-     </>
-    )
-  }
-
-
+        <>
+            <div className="slider">
+                <div className="sliders">
+                    {logement.pictures.map((picture, index) => (
+                        <div
+                            className="div-slider"
+                            key={index}
+                            style={{
+                                display:
+                                    index === currentIndex ? "block" : "none",
+                            }}
+                        >
+                            <img
+                                className="imgAppartement"
+                                src={picture}
+                                alt="appartement"
+                            />
+                            {logement.pictures.length > 1 && (
+                            <p className="image-number">{`${index + 1}/${
+                                logement.pictures.length
+                            }`}</p>)}
+                        </div>
+                    ))}
+                    {logement.pictures.length > 1 && (
+                        <>
+                            <button
+                                onClick={() =>
+                                    setCurrentIndex(
+                                        (currentIndex -
+                                            1 +
+                                            logement.pictures.length) %
+                                            logement.pictures.length
+                                    )
+                                }
+                            >
+                                <img
+                                    className="leftcursor "
+                                    src={Left}
+                                    alt="cursor Left"
+                                />
+                            </button>
+                            <button
+                                onClick={() =>
+                                    setCurrentIndex(
+                                        (currentIndex + 1) %
+                                            logement.pictures.length
+                                    )
+                                }
+                            >
+                                <img
+                                    className="rightcursor"
+                                    src={Right}
+                                    alt="cursor Right"
+                                />
+                            </button>
+                        </>
+                    )}
+                </div>
+            </div>
+        </>
+    );
+}

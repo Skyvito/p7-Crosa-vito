@@ -1,0 +1,100 @@
+.AccordeonDescritpion {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+}
+.AccordeonÉquipements {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    list-style: none;
+}
+.AccordelonYoung {
+    max-width: 1240px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.accordeonLogement {
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 625px) {
+    .accordeonLogement {
+        padding: 0 30px;
+    }
+
+    .AccordelonYoung {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .AccordeonDescritpion {
+        max-width: 500px;
+        margin-right: 10px;
+    }
+
+    .AccordeonÉquipements {
+        max-width: 500px;
+        margin-left: 10px;
+    }
+}
+
+/* 
+
+  .accordeonLogement {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.AccordelonYoung {
+    max-width: 1240px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.AccordeonDescritpion {
+    max-width: 500px;
+    width: 100%;
+    margin-right: 10px;
+    
+}
+
+.AccordeonÉquipements {
+    max-width: 500px;
+    width: 100%;
+    list-style: none;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 624px) {
+    .AccordeonDescritpion {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .AccordeonÉquipements {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .AccordelonYoung {
+        flex-direction: column;
+    }
+    .accordeonLogement{
+     padding: 0 10px;   
+    }
+    .AccordelonYoung{
+        padding-bottom: 0;
+    }
+}   */

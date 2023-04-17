@@ -25,7 +25,7 @@
 }
 
 .titleLogement {
-    font-size: 2.25em;
+    font-size: 2.1em;
 }
 
 .locationLogement {
@@ -60,9 +60,9 @@
 
 .personnelInformation p {
     font-size: 1.125em;
-    width: 92px;
+    width: 100%;
+    max-width: 113px;
     height: 52px;
-    line-height: 142.6%;
     display: flex;
     align-items: flex-end;
     text-align: right;
@@ -79,6 +79,7 @@
 
 .rating {
     padding-top: 10px;
+    display: flex;
 }
 
 .starAndProfile {
@@ -96,7 +97,7 @@
     }
 }
 
-@media screen and (max-width: 850px) and (min-width: 625px) {
+@media screen and (max-width: 950px) and (min-width: 625px) {
     .titleInformation {
         display: inline-block;
     }
@@ -134,7 +135,6 @@
     }
     .titleLogement {
         font-size: 1.125em;
-        padding-bottom: 15px;
     }
     .locationLogement {
         font-size: 0.875em;

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
 .slider img:not(:first-child) {
     display: none;
 }
@@ -33,8 +35,8 @@
     left: 1%;
     top: 50%;
     transform: translate(-1%, -50%);
-    height: 79.19999694824219px;
-    width: 46.68000411987305px;
+    height: 79px;
+    width: 46px;
 }
 
 .rightcursor {
@@ -42,8 +44,22 @@
     right: 1%;
     top: 50%;
     transform: translate(-1%, -50%);
-    height: 79.19999694824219px;
-    width: 46.68000411987305px;
+    height: 79px;
+    width: 46px;
+}
+
+.div-slider {
+    width: 100%;
+    height: 100%;
+    position: RELATIVE;
+}
+
+.image-number {
+    position: ABSOLUTE;
+    right: 50%;
+    bottom: 2%;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
 }
 
 @media screen and (max-width: 624px) {

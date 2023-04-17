@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import logements from "../../logements/logements";
 import Tags from "../Tag/Tag";
 import "./CardUtilisateur.css";
 import WhiteStar from "./img/WhiteStar.svg";
 import RedStar from "./img/RedStar.svg";
 
-export default function CardUtilisateur() {
-    const { id } = useParams();
-    const logement = logements.find((logement) => logement.id === id);
-    console.log(logement);
+export default function CardUtilisateur(props) {
+    const logement = props.logement;
 
     const [redStars, setRedStars] = useState(0);
 
@@ -38,19 +34,20 @@ export default function CardUtilisateur() {
                             {[...Array(5)].map((item, i) => {
                                 const isRed = i < redStars;
                                 const starImg = isRed ? RedStar : WhiteStar;
+                                console.log(isRed);
                                 return (
                                     <img
                                         className="star"
                                         key={i}
                                         src={starImg}
-                                        alt=""
+                                        alt="étoile de notation"
                                     />
                                 );
                             })}
                         </div>
                         <div className="personnelInformation">
                             <p>{logement.host.name}</p>
-                            <img src={logement.host.picture} alt="" />
+                            <img src={logement.host.picture} alt="profil" />
                         </div>
                     </div>
                 </div>

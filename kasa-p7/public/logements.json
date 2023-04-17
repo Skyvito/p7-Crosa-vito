@@ -1,4 +1,4 @@
-const logements =
+
 
 [
     {
@@ -527,4 +527,3 @@ const logements =
     }
 ]
 
-export default logements
