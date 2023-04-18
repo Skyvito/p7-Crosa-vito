@@ -18,7 +18,7 @@
     width: 100%;
     height: 111px;
     object-fit: cover;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 .header-body::before {
@@ -30,7 +30,7 @@
     height: 100%;
     background: #000000;
     mix-blend-mode: darken;
-    border-radius: 25px;
+    border-radius: 10px;
     opacity: 0.3;
 }
 
@@ -69,6 +69,15 @@
         font-size: 1.2em;
     }
 }
+
+
+@media screen and (min-width: 625px){
+    .fond-montagnes, .header-body::before {
+        border-radius: 25px;
+    }
+}
+
+
 
 /* 
 

@@ -5,15 +5,17 @@ import Header from "../../Component/Header/Header";
 import SliderImg from "../../Component/Carrousel/Carrousel.js";
 import CardUtilisateur from "../../Component/CardUtilisateur/CardUtilisateur";
 import Accordeon from "../../Component/Accordeon/Accordeon";
-import Erreur from "../../Component/Erreur/Erreur";
+import Erreur from "../../Pages/Erreur/Erreur";
 
 export default function Appartement() {
     const [logements, setLogements] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
         fetch(`/logements.json`)
             .then((response) => response.json())
             .then((data) => {
                 setLogements(data);
+                setIsLoading(false);
             });
     }, []);
 
@@ -22,7 +24,10 @@ export default function Appartement() {
     const logement = logements.find((logement) => logement.id === id);
     console.log(logement);
 
-    if (!logement) {
+    
+    if (isLoading) {
+        return <div></div>;
+    } else if (!logement) {
         return <Erreur />;
     }
     

@@ -1,6 +1,93 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-.blockLocation {
+
+ .blockLocation {
+    width: 100%;
+    height: 255px;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: transform 0.2s ease-in-out;
+}
+
+.blockLocation:hover {
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 18px 5px #9c8f8f;
+    
+}
+
+.blockLocation img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.blockLocation h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.blockLocation::before {
+    content: "";
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+    );
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 625px) {
+    .blockLocation {
+        width: 100%;
+        height: 340px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .blockLocation {
+        width: 340px;
+        height: 340px;
+    }
+
+    .blockLocation:hover{
+        transform: scale(1.1)
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* .blockLocation {
     position: relative;
     width: 340px;
     height: 340px;
@@ -78,4 +165,4 @@
     .blockLocation {
         height: 255px;
     }
-}
+}  */

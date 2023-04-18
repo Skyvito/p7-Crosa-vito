@@ -1,6 +1,227 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
+     .titleInformation {
+    display: inline-block;
+}
+.starAndProfile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.titleLogement {
+    font-size: 1.125em;
+}
+.locationLogement {
+    font-size: 0.875em;
+    margin-bottom: 10px;
+   
+}
+.star {
+    width: 13px;
+    height: 13px;
+    margin: 0 5px;
+}
+.personnelInformation p {
+    font-size: 0.79em;
+    height: 33px;
+    width: 75px;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 10px;
+}
+.personnelInformation img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
 .divMother {
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.titleLogement,
+.locationLogement,
+.personnelInformation p {
+    font-family: "Montserrat", sans-serif;
+    color: #ff6060;
+    font-weight: 500;
+}
+
+.information {
+    padding-top: 15px;
+    max-width: 1240px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.star {
+    margin: 0px 2px;
+}
+
+.tagList {
+    display: flex;
+    margin-top: 10px;
+    max-width: 1240px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.personnelInformation {
+    display: flex;
+    align-items: center;
+}
+
+.tag {
+    display: flex;
+}
+
+
+.rating {
+    padding-top: 10px;
+    display: flex;
+}
+
+@media screen and (min-width: 625px){
+    .titleLogement {
+        font-size: 2.1em;
+    }
+
+    .locationLogement {
+        font-size: 1.125em;
+    }
+
+    .personnelInformation p{
+        font-size: 1.125em
+    }
+ .personnelInformation p{
+    font-size: 1.125em;
+    width: 100%;
+    max-width: 113px;
+    height: 52px;
+}
+
+.personnelInformation img {
+    width: 64px;
+    height: 64px;
+}
+}
+
+@media screen and (max-width: 754px) and (min-width: 625px) {
+    .titleLogement {
+        font-size: 1.5em;
+    }
+}
+
+
+
+@media screen and (max-width: 950px) and (min-width: 625px) {
+    .titleInformation {
+        display: inline-block;
+    }
+    .titleLogement,
+    .locationLogement {
+        text-align: center;
+    }
+    .tag {
+        justify-content: center;
+    }
+    .starAndProfile {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    .rating {
+        padding-top: 25px;
+    }
+
+    .star {
+    width: 20px;
+    height: 20px;
+}
+}
+
+
+@media screen and (min-width: 951px){
+    .divMother {
+        padding: 0 30px;
+        flex-wrap: wrap;
+    }
+    
+    .information {
+        padding-top: 30px;
+    }
+    
+    .locationLogement {
+        margin-bottom: 10px;
+    }
+    
+    .tagList {
+        display: flex;
+        margin-top: 10px;
+        max-width: 1240px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .titleInformation {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .personnelInformation {
+        display: flex;
+        align-items: center;
+    }
+    
+    .personnelInformation img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+    
+    .personnelInformation p {
+        font-size: 1.125em;
+        width: 100%;
+        max-width: 113px;
+        height: 52px;
+    }
+    
+    .star {
+        margin: 0 5px;
+    width: 25px;
+    height: 25px;
+}
+   
+    
+    .rating {
+        padding-top: 10px;
+        display: flex;
+    }
+    
+    .starAndProfile {
+        flex-direction: column-reverse;
+    }
+}  
+
+
+
+
+
+
+ 
+
+
+
+
+/* 
+
+   .divMother {
     width: 100%;
     padding: 0 30px;
     display: flex;
@@ -35,7 +256,6 @@
 
 .tagList {
     display: flex;
-
     margin-top: 10px;
     max-width: 1240px;
     width: 100%;
@@ -161,4 +381,4 @@
     .star {
         margin: 0px 2px;
     }
-}
+}      */

@@ -7,9 +7,6 @@
     border-radius: 25px;
     margin: 0 auto;
     height: 100%;
-    /* display: grid;
-    grid-template-columns: repeat(3, 340px);
-    grid-template-rows: repeat(3, auto); */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
