@@ -1,6 +1,111 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-.logo {
+
+
+ .logo {
+    width: 120px;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    justify-content: center;
+}
+
+.navbar ul {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+.navbar ul li {
+    margin: 0 0 0 30px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.logo:hover {
+    transform: scale(0.8);
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+
+.activeLink {
+    text-decoration-color: #ff6060;
+    color: #ff6060;
+}
+
+.desactiveLink {
+    color: #ff6060;
+    text-decoration: none;
+}
+
+.header-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1240px;
+}
+
+
+@media screen and (min-width: 381px){
+    .logo {
+        width: 145px;
+        height: 47px;
+    }
+}
+
+@media screen and (min-width: 625px){
+    .logo{
+        width: 210.32px;
+        height: 68px;
+    }
+
+    .navbar ul li{
+        margin: 0 0 0 50px;
+    }
+
+    .navbar ul{
+        font-size: 1.125em;
+    }
+    .header{
+        padding: 30px
+    }
+
+
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+ .logo {
     width: 210.32px;
     height: 68px;
     transition: transform 0.5s ease-in-out;
@@ -75,4 +180,4 @@
         width: 120px;
         height: auto;
     }
-}
+}  */

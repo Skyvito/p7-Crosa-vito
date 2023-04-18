@@ -1,6 +1,95 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-.slider img:not(:first-child) {
+ .slider img:not(:first-child) {
+    display: none;
+}
+
+.imgAppartement {
+    max-width: 1240px;
+    width: 100%;
+    border-radius: 25px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 255px;
+    padding: 0 10px;
+}
+
+.sliders {
+    max-width: 1240px;
+    width: 100%;
+    border-radius: 25px;
+    position: relative;
+    height: 100%;
+}
+
+.leftcursor {
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    transform: translate(-1%, -50%);
+    width: 11.67px;
+    height: 19.8px;
+}
+
+.rightcursor {
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    transform: translate(-1%, -50%);
+    width: 11.67px;
+    height: 19.8px;
+}
+
+.div-slider {
+    width: 100%;
+    height: 100%;
+    position: RELATIVE;
+}
+
+.image-number {
+    position: ABSOLUTE;
+    right: 50%;
+    bottom: 2%;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (min-width: 625px) {
+    .slider {
+        padding: 0 30px;
+        height: 415px;
+    }
+    .rightcursor,
+    .leftcursor {
+        height: 79px;
+        width: 46px;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* .slider img:not(:first-child) {
     display: none;
 }
 
@@ -75,4 +164,4 @@
         width: 11.67px;
         height: 19.8px;
     }
-}
+}   */

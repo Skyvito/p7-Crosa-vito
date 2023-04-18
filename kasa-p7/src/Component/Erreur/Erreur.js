@@ -10,7 +10,7 @@ export default function Erreur() {
                 Oups! La page que vous demandez n'existe pas.
             </p>
             <Link to="/" className="LinkReturn">
-                <p>Retourner sur la page d’accueil</p>
+                <p>Retourner sur la page d'accueil</p>
             </Link>
         </div>
     );
