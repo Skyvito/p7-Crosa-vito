@@ -9,13 +9,13 @@ import Erreur from "../../Pages/Erreur/Erreur";
 
 export default function Appartement() {
     const [logements, setLogements] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
+    
     useEffect(() => {
         fetch(`/logements.json`)
             .then((response) => response.json())
             .then((data) => {
                 setLogements(data);
-                setIsLoading(false);
+                
             });
     }, []);
 
@@ -25,9 +25,8 @@ export default function Appartement() {
     console.log(logement);
 
     
-    if (isLoading) {
-        return <div></div>;
-    } else if (!logement) {
+    
+    if (!logement) {
         return <Erreur />;
     }
     
