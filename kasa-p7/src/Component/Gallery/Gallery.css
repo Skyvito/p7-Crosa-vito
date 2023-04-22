@@ -39,7 +39,7 @@
 }
 
 
-@media screen and (max-width: 1023px) and (min-width: 768px){
+@media screen and (min-width: 768px){
     .gallery-bloc {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
@@ -47,6 +47,23 @@
         grid-template-rows: repeat(2, auto);
         gap: 30px;
        
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+    .gallery-bloc{
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 25px;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1240px;
+            gap: 20px;
     }
 }
 

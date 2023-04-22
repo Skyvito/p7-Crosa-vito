@@ -44,16 +44,20 @@
     border-radius: 10px;
 }
 
-@media screen and (max-width: 1050px) and (min-width: 625px) {
+@media screen and (min-width: 625px) {
     .accords {
         padding: 0 50px;
     }
-}
 
-@media screen and (min-width: 625px) {
     .Body {
         padding: 0 30px;
         
+    }
+}
+
+@media screen and (min-width: 1051px) {
+    .accords {
+        padding: 0 10px;
     }
 
     .header-bodyMontagne::before {

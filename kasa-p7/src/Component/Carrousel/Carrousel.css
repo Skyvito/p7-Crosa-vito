@@ -7,7 +7,7 @@
 .imgAppartement {
     max-width: 1240px;
     width: 100%;
-    border-radius: 25px;
+    border-radius: 10px;
     height: 100%;
     object-fit: cover;
 }
@@ -71,6 +71,9 @@
     .leftcursor {
         height: 79px;
         width: 46px;
+    }
+    .imgAppartement{
+        border-radius: 25px;
     }
 } 
 

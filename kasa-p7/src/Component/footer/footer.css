@@ -39,12 +39,6 @@
     font-size: 0.75em;
 }
 
-@media screen and (max-width: 624px) and (min-width: 321px) {
-    .footer-p {
-        font-size: 1em;
-    }
-}
-
 @media screen and (min-width: 625px) {
     .footer-p {
         font-size: 1.2em;

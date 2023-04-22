@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-  .Title-Error,
+.Title-Error,
 .Description-Error,
 .LinkReturn {
     font-family: "Montserrat";
@@ -28,7 +28,7 @@
     flex-direction: column;
 }
 
-@media screen and (max-width: 768px) and (min-width: 624px) {
+@media screen and (min-width: 624px) {
     .Description-Error {
         font-size: 1.4em;
     }
@@ -51,14 +51,6 @@
         font-size: 18em;
     }
 
-    .divblockError {
-        padding: 40px 20px;
-    }
-
-    .LinkReturn {
-        font-size: 1.125em;
-    }
-
     .Description-Error {
         font-size: 1.8em;
     }
@@ -68,15 +60,9 @@
     .Description-Error {
         font-size: 2.25em;
     }
-}  
+}
 
-
-
-
-
- 
-
- /* .Title-Error,
+/* .Title-Error,
 .Description-Error,
 .LinkReturn {
     font-family: "Montserrat";

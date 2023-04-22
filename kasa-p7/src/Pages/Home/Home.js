@@ -3,7 +3,7 @@ import "./Home.css";
 import Fond from "./Img/Fond.png";
 import Header from "../../Component/Header/Header";
 
-import Gallery from "../../Component/Galerry/Gallery";
+import Gallery from "../../Component/Gallery/Gallery";
 import Footer from "../../Component/footer/footer";
 export default function Home() {
     return (

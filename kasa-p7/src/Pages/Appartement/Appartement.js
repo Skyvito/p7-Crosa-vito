@@ -1,37 +1,33 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "./Appartement.css";
 import Header from "../../Component/Header/Header";
 import SliderImg from "../../Component/Carrousel/Carrousel.js";
 import CardUtilisateur from "../../Component/CardUtilisateur/CardUtilisateur";
 import Accordeon from "../../Component/Accordeon/Accordeon";
-import Erreur from "../../Pages/Erreur/Erreur";
 
 export default function Appartement() {
-    const [logements, setLogements] = useState([]);
-    
+    const { id } = useParams();
+    const navigate = useNavigate();
+    const [logement, setLogement] = useState();
+
     useEffect(() => {
         fetch(`/logements.json`)
             .then((response) => response.json())
             .then((data) => {
-                setLogements(data);
-                
+                const logement = data.find((logement) => logement.id === id);
+                console.log(logement);
+                if (logement === undefined) {
+                    console.log("non");
+                    navigate("/erreur");
+                }
+                console.log("oui");
+                setLogement(logement);
             });
     }, []);
+ 
 
-    console.log(logements);
-    const { id } = useParams();
-    const logement = logements.find((logement) => logement.id === id);
-    console.log(logement);
-
-    
-    
-    if (!logement) {
-        return <Erreur />;
-    }
-    
-
-    return (
+    return logement ? (
         <>
             <Header />
             <SliderImg logement={logement} />
@@ -55,6 +51,10 @@ export default function Appartement() {
                     </div>
                 </div>
             </div>
+        </>
+    ) : (
+        <>
+            <p>Chargement en cours...</p>
         </>
     );
 }
