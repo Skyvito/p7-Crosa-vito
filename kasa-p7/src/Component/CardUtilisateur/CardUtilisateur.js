@@ -16,7 +16,7 @@ export default function CardUtilisateur(props) {
     }, [logement.rating]);
 
     return (
-        <div className="divMother">
+        <section className="main-containe">
             <div className="information">
                 <div className="titleInformation">
                     <div>
@@ -52,6 +52,6 @@ export default function CardUtilisateur(props) {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

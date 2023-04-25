@@ -17,7 +17,7 @@ export default function Gallery() {
   
 
     return (
-        <div className="gallery-Father">
+        <main  className="gallery-Father">
             <div className="gallery-bloc">
                 {apparts &&
                     apparts.map((logement) => {
@@ -32,6 +32,6 @@ export default function Gallery() {
                         );
                     })}
             </div>
-        </div>
+        </main >
     );
 }

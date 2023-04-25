@@ -35,7 +35,7 @@
     height: 32px;
     border-radius: 50%;
 }
-.divMother {
+.main-containe {
     padding: 0 10px;
     width: 100%;
     display: flex;
@@ -111,10 +111,10 @@
     .titleInformation {
         display: inline-block;
     }
-    .titleLogement,
+     .titleLogement,
     .locationLogement {
         text-align: center;
-    }
+    } 
     .tag {
         justify-content: center;
     }
@@ -140,10 +140,12 @@
 }
 
 @media screen and (min-width: 951px) {
-    .divMother {
+    .main-containe {
         padding: 0 30px;
         flex-wrap: wrap;
     }
+
+    
 
     .information {
         padding-top: 30px;
@@ -151,7 +153,11 @@
 
     .locationLogement {
         margin-bottom: 10px;
-        text-align: left;
+    }
+
+    .titleLogement,
+    .locationLogement{
+        text-align: start;
     }
 
     .tagList {
@@ -233,7 +239,7 @@
 
 /* 
 
-   .divMother {
+   .main-containe {
     width: 100%;
     padding: 0 30px;
     display: flex;
@@ -384,7 +390,7 @@
         width: 32px;
         height: 32px;
     }
-    .divMother {
+    .main-containe {
         padding: 0 10px;
     }
     .information {

@@ -63,7 +63,7 @@
         flex-wrap: wrap;
         width: 100%;
         max-width: 1240px;
-            gap: 20px;
+        gap: 50px;
     }
 }
 

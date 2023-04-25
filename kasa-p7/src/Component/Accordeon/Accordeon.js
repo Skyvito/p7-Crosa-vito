@@ -25,7 +25,7 @@ export default function Accordeon(props) {
     }, []);
 
     return (
-        <div className="accord">
+        <section className="accord">
             <div onClick={toogleState} className="accord-visible">
                 <h2>{props.title}</h2>
                 <img
@@ -48,6 +48,6 @@ export default function Accordeon(props) {
             >
                 <p  aria-hidden={toogle ? "true" : "false"}>{props.text}</p>
             </div>
-        </div>
+        </section>
     );
 }

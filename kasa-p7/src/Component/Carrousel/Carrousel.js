@@ -12,8 +12,8 @@ export default function SliderImg(props) {
     console.log(currentIndex);
 
     return (
-        <>
-            <div className="slider">
+        
+            <section  className="slider">
                 <div className="sliders">
                     {logement.pictures.map((picture, index) => (
                         <div
@@ -70,7 +70,7 @@ export default function SliderImg(props) {
                         </>
                     )}
                 </div>
-            </div>
-        </>
+            </section >
+        
     );
 }

@@ -33,7 +33,7 @@ export default function Appartement() {
             <SliderImg logement={logement} />
             <CardUtilisateur logement={logement} />
 
-            <div className="accordeonLogement">
+            <section className="accordeonLogement">
                 <div className="AccordelonYoung">
                     <div className="AccordeonDescritpion">
                         <Accordeon
@@ -50,7 +50,7 @@ export default function Appartement() {
                         />
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     ) : (
         <>
