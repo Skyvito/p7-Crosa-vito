@@ -34,7 +34,7 @@ export default function CardUtilisateur(props) {
                             {[...Array(5)].map((item, i) => {
                                 const isRed = i < redStars;
                                 const starImg = isRed ? RedStar : WhiteStar;
-                                console.log(isRed);
+                                console.log(redStars);
                                 return (
                                     <img
                                         className="star"

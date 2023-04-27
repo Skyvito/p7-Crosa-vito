@@ -15,6 +15,7 @@
 .locationLogement {
     font-size: 0.875em;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 .star {
     width: 13px;
@@ -77,6 +78,9 @@
 
 .tag {
     display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .rating {
@@ -117,6 +121,7 @@
     } 
     .tag {
         justify-content: center;
+        flex-wrap: nowrap;
     }
     .starAndProfile {
         flex-direction: row-reverse;
