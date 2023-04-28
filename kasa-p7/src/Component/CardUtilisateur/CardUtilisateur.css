@@ -116,10 +116,10 @@
     .titleInformation {
         display: inline-block;
     }
-     .titleLogement,
+    .titleLogement,
     .locationLogement {
         text-align: center;
-    } 
+    }
     .tag {
         justify-content: center;
     }
@@ -145,15 +145,10 @@
 }
 
 @media screen and (min-width: 951px) {
-
-
-
     .main-containe {
         padding: 0 30px;
         flex-wrap: wrap;
     }
-
-    
 
     .information {
         padding-top: 30px;
@@ -164,7 +159,7 @@
     }
 
     .titleLogement,
-    .locationLogement{
+    .locationLogement {
         text-align: start;
     }
 
@@ -176,7 +171,7 @@
         justify-content: space-between;
     }
 
-    .titleandtad{
+    .titleandtad {
         width: 100%;
     }
 
@@ -188,6 +183,7 @@
     .personnelInformation {
         display: flex;
         align-items: center;
+        justify-content: END;
     }
 
     .personnelInformation img {
@@ -198,7 +194,7 @@
 
     .personnelInformation p {
         font-size: 1.125em;
-        width: 100%;
+        /* width: 100%; */
         max-width: 113px;
         height: 52px;
     }
@@ -222,4 +218,3 @@
         justify-content: flex-start;
     }
 }
-
