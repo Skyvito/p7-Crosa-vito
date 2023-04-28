@@ -19,7 +19,7 @@ export default function CardUtilisateur(props) {
         <section className="main-containe">
             <div className="information">
                 <div className="titleInformation">
-                    <div>
+                    <div className="titleandtad">
                         <h2 className="titleLogement">{logement.title}</h2>
                         <p className="locationLogement">{logement.location}</p>
 

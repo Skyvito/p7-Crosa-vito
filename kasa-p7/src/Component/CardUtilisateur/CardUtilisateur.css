@@ -102,8 +102,9 @@
     }
     .personnelInformation p {
         font-size: 1.125em;
-        width: 100%;
+        /* width: 100%; */
         max-width: 113px;
+        width: min-content;
         height: 52px;
     }
 
@@ -121,7 +122,6 @@
     } 
     .tag {
         justify-content: center;
-        flex-wrap: nowrap;
     }
     .starAndProfile {
         flex-direction: row-reverse;
@@ -145,6 +145,9 @@
 }
 
 @media screen and (min-width: 951px) {
+
+
+
     .main-containe {
         padding: 0 30px;
         flex-wrap: wrap;
@@ -171,6 +174,10 @@
         max-width: 1240px;
         width: 100%;
         justify-content: space-between;
+    }
+
+    .titleandtad{
+        width: 100%;
     }
 
     .titleInformation {
